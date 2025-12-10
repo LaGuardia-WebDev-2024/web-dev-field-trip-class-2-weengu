@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <style>
       body {
-        background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMTMtYWstNTEyMy1zcy0wMi5qcGc.jpg");
+        background-image: url("https://media.istockphoto.com/id/1472294286/video/3d-animated-background-of-colorful-flowers.jpg?s=640x640&k=20&c=9OvE_ghzOY1YPhJRYr9exgQZhtA7Mw2PmLHyBj9EWxY=");
       }
       h1 {
         font-family: "Chewy", system-ui;
         text-align: center;
         font-size: 70px;
-        color: darkblue;
+        color: rgb(240, 226, 133);
       }
       h2 {
         font-family: "Chewy", system-ui;
@@ -31,7 +31,7 @@
         justify-content: space-around;
       }
       .lag, .ps199 {
-        background-color: aliceblue;
+        background-color: rgb(118, 208, 189);
         width: 40%;
         border-radius: 20px;
         padding: 10px;
@@ -44,6 +44,48 @@
         width: 30%;
         border-radius: 10px;
       }
+      #narnia {
+        width: 200px
+      }
+      flip-card {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
     </style>
   </head>
   <body>
@@ -52,8 +94,8 @@
     <div class="us">
       <div class="lag">
         <h2>LaGuardia Student</h2>
-        <p><b>First Name: </b> Jocelyn</p>
-        <p><b>Favorite Subject: </b>Web Development</p>
+        <p><b>First Name: </b> Wren </p>
+        <p><b>Favorite Subject: </b>History </p>
         <center>
           <img
             src="https://mshallwebdevelopment.wordpress.com/wp-content/uploads/2024/05/cropped-2023_webdevlogo_transpnoyear.png?w=1024"
@@ -72,18 +114,31 @@
       </div>
       <div class="ps199">
         <h2>PS 199 Student</h2>
-        <p><b>First Name: </b> ****Name**** </p>
-        <p><b>Favorite Subject: </b> ****Subject****</p>
+        <p><b>First Name: </b> Avery </p>
+        <p><b>Favorite Subject: </b> Reading </p>
         <center>
-          <img src="" />
+          <img src="https://media.tenor.com/wfo9R4SR51sAAAAM/wink-puppy.gif" />
         </center>
-        <p><b>Favorite Movie: </b> ****Movie****</p>
+        <p><b>Favorite Activity </b> Tap dancing</p>
         <center>
-          <img src="" />
+          <img src="https://intercommunityaction.org/wp-content/uploads/2015/11/Tap_Dance_Shoes.jpeg"/>
         </center>
-        <p><b>Favorite Book: </b> ****Book****</p>
+        <p><b>Favorite Book: </b> Narnia</p>
+        
         <center>
-          <img src="" />
+          <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images.booksense.com/images/990/404/9780064404990.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Narnia is awesome</h2> 
+      <p>Avery is awesome</p> 
+      <p>We love reading</p>
+    </div>
+  </div>
+</div>
+          
         </center>
       </div>
     </div>
